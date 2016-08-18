@@ -1,0 +1,32 @@
+<xml>
+
+  <!-- For a more in depth guide: https://github.com/snowkit/hxcpp-guide -->
+  
+  <!--<include name="${LINC_STEAM_API_PATH}lib/steamsdk/files.xml"/>-->
+  
+  <files id='haxe'>
+    <compilerflag value='-I${LINC_STEAM_API_PATH}/lib/'/>
+    <compilerflag value='-I${LINC_STEAM_API_PATH}/lib/steamsdk/include/'/>
+    <!--<include name="${LINC_STEAM_API_PATH}/lib/steamsdk/include/files.xml"/>-->
+
+    <!-- add files and flags to the haxe c++ build -->
+
+    <!--<compilerflag value='-I${LINC_STEAM_API_PATH}/linc/'/>-->
+
+    <!--<file name='${LINC_STEAM_API_PATH}linc/linc_steam_api.cpp' />-->
+
+  </files>
+
+  <target id="haxe">
+    
+    <section if="windows">
+      <lib name="${LINC_STEAM_API_PATH}lib/steamsdk/lib/steam_api.lib" if="HXCPP_M32"/>
+      <lib name="${LINC_STEAM_API_PATH}lib/steamsdk/lib/win64/steam_api64.lib" if="HXCPP_M64"/>
+    </section>
+    <!-- TODO: Other platforms -->
+    
+    <!-- add linker flags to the haxe build output -->
+
+  </target>
+
+</xml>

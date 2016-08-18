@@ -1,0 +1,12 @@
+bin/
+linc_steam_api.hxproj
+run.bat
+lib/steamsdk/lib/steam_api.*
+lib/steamsdk/lib/linux32/
+lib/steamsdk/lib/linux64/
+lib/steamsdk/lib/osx32/
+lib/steamsdk/lib/win64/
+lib/steamsdk/include/*.h
+lib/steamsdk/include/*.json
+lib/steamsdk/include/*.cs
+lib/steamsdk/include/lib

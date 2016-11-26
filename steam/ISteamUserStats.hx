@@ -16,7 +16,7 @@ extern class ISteamUserStats
   @:overload(function(name:ConstCharStar, data:Int):Bool {})
   public function SetStat(name:ConstCharStar, data:Float):Bool;
   //public function SetStat(name:ConstCharStar, data:Int):Bool; // OVERLOAD
-  public function UpdateAvgRateStat(name:ConstCharStar, countThisSession:Float, sessionLength:Float64):Bool
+  public function UpdateAvgRateStat(name:ConstCharStar, countThisSession:Float, sessionLength:Float64):Bool;
   
   //public function GetAchievement(name:ConstCharStar, achieved:Bool):Bool;
   public function SetAchievement(name:ConstCharStar):Bool;

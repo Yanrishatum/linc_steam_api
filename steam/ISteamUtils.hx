@@ -36,7 +36,7 @@ extern class ISteamUtils
   
   public function GetIPCCallCount():UInt;
   
-  public function SetWarningMessageHook(Int->ConstCharStar->Void);
+  //public function SetWarningMessageHook(Int->ConstCharStar->Void);
   
   public function IsOverlayEnabled():Bool;
   

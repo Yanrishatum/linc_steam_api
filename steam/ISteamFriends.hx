@@ -65,7 +65,7 @@ extern class ISteamFriends
   @:overload(function():Void {})
   public function ActivateGameOverlay(dialog:ConstCharStar):Void;
   
-  public function ActivateGameOverlayToUser(dialog:ConstCharStar, steamID:CSteamID);
+  //public function ActivateGameOverlayToUser(dialog:ConstCharStar, steamID:CSteamID);
   
   public function ActivateGameOverlayToWebPage(url:ConstCharStar):Void;
   
@@ -93,7 +93,7 @@ extern class ISteamFriends
   
   public function GetUserRestrictions():UInt;
   
-  public function GetUserRestrictions(key:ConstCharStar, value:ConstCharStar):Bool;
+  //public function GetUserRestrictions(key:ConstCharStar, value:ConstCharStar):Bool;
   
   public function ClearRichPresence():Void;
   
